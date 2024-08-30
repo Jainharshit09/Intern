@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar{
+    background-color: #9A77CF;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+    color: black;
+    height: 55px;
+    border: 2px solid #9A77CF;
+    box-shadow: 2px 2px 2px gray;
+  }
+  .navbar .dropdown-menu {
+    background-color: #9A77CF;
+    font-size: 0.8rem;
+  }
+  .page1{
+    color: black;
+    font-size: 26px;
+  }
+  
+  
+  .page2 input{
+    padding: 8px 5px 8px 33px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline: none;
+    width: 400px;
+    background: url("magnifying-glass-solid.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 10px 12px;
+    background-size: 14px;
+  }
+  .page3{
+    padding-left: 50px;
+    color: black;
+  }
+  .page3 li a{
+    color: black;
+  }
+  .page4{
+    font-size: 20px;
+  }
+  .page5{
+    margin-top: 7px;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  
+  .carousel-container {
+    padding-top: 55px;
+    position: relative;
+  }
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    left: 5%;
+    top: 20%;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 18px;
+  }
+  .caption-container {
+    max-width: 50%;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .btn-enroll-now {
+    background-color: #9A77CF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn-enroll-now:hover {
+    background-color: rgba(128, 128, 128, 0.7);
+  }
+  /* Adjusted carousel control buttons */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+
+
+  .section-heading {
+    background-color: #9A77CF; /* Transparent yellow */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add some margin bottom for separation */
+    }
+    .section {
+      padding: 60px 0;
+      background-color: #ffff;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      line-height: 1.2;
+      word-wrap: break-word;
+    }
+   
+    .card {
+      transition: transform 0.3s;
+      background-color: #ffffff;
+      border-radius: 20px;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      background-color: whitesmoke;
+      box-shadow: 2px 2px 2px gray;
+    }
+    .card img {
+      height: 160px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .clients {
+      padding: 70px;
+      background-color: white;
+      text-align: center;
+    }
+    
+    .clients h1 {
+      color: #0c0c0c;
+  
+    }
+    
+    .clients .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .client-box {
+      width: calc(25% - 120px);
+      text-align: center;
+    }
+    
+    @media (max-width: 200px) {
+      .client-box {
+        width: calc(50% - 50px);
+      }
+    }
+    .client-box img {
+      width: 60%;
+      height: 90%;
+    }
+    .logo-slider-container {
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+      height: 150px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    
+    .logo-slider {
+      height: 150px;
+      width: 100%;
+    }
+    
+    .logo-slide-track {
+      animation: logoScroll 40s linear infinite;
+      display: flex;
+      width: calc(180px * 18);
+    }
+    
+    .logo-slide {
+      height: 150px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-slide img {
+      height: 80px;
+      width: auto;
+      max-width: 150px;
+    }
+    
+    @keyframes logoScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-180px * 9));
+      }
+    }
+    
+    .logo-slider-container::before,
+    .logo-slider-container::after {
+      content: "";
+      height: 150px;
+      position: absolute;
+      width: 120px;
+      z-index: 2;
+    }
+    
+    .logo-slider-container::before {
+      left: 0;
+      top: 0;
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    
+    .logo-slider-container::after {
+      right: 0;
+      top: 0;
+      background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .page10{
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 2px rgb(202, 199, 199);
+      }
+      .testimonial-heading{
+        padding-top: 30px;
+      }
+      .card-body {
+        text-align: center;
+      }
+
+
+
+
+      .site-footer {
+        background-color: #9A77CF;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: white;
+        border-radius: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        width: 100%; /* Ensure the footer spans the full width */
+        margin: 0;
+        margin-top: 50px;
+      }
+      .site-footer.container{
+        width: 150px;
+      }
+      .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5;
+      }
+      .site-footer hr.small {
+        margin: 20px 0;
+      }
+      .site-footer h6 {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 2px;
+      }
+      .site-footer a {
+        color: #737373;
+      }
+      .site-footer a:hover {
+        color: #fff;
+        text-decoration: none;
+      } 
+      .footer-links {
+        padding-left: 0;
+        list-style: none;
+      }
+      .footer-links li {
+        display: block;
+      }
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer-links a:active,
+      .footer-links a:focus,
+      .footer-links a:hover {
+        color: #fff;
+        text-decoration: none;
+      } 
+      .site-footer .social-icons {
+        text-align: right;
+      }
+      .site-footer .social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: whitesmoke;
+      }
+      .copyright-text {
+        margin: 0;
+      }
+      @media (max-width: 991px) {
+        .site-footer [class^="col-"] {
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: 767px) {
+        .site-footer {
+          padding-bottom: 0;
+        }
+        .site-footer .copyright-text,
+        .site-footer .social-icons {
+          text-align: center;
+        }
+      }
+      .social-icons {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        display: flex;
+      }
+      .social-icons li {
+        display: inline-block;
+        margin-bottom: 4px;
+      } 
+      .social-icons a {
+        background-color: #eceeef;
+        color: #818a91;
+        font-size: 16px;
+        display: inline-block;
+        line-height: 44px;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        margin-right: 8px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+      .social-icons a:active,
+      .social-icons a:focus,
+      .social-icons a:hover {
+        color: #fff;
+        background-color: #29aafe;
+      } 
+      .social-icons a.facebook:hover {
+        background-color: #3b5998;
+      }
+      .social-icons a.twitter:hover {
+        background-color: #00aced;
+      }
+      .social-icons a.linkedin:hover {
+        background-color: #007bb6;
+      }
+      .social-icons a.instagram:hover {
+        background-color: #ea4c89;
+      }
+

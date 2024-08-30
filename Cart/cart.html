@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Online Course Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <h1>Course Cart</h1>
+  <div class="container">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Price</th>
+          <th>Discount (%)</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+      </tbody>
+    </table>
+    <div class="cart-totals">
+      <h2>Cart Totals</h2>
+      <table >
+        <tr>
+          <th>Total Price</th>
+          <td id="total-price">0.00</td>
+        </tr>
+        <tr>
+          <th>Subtotal</th>
+          <td id="subtotal">0.00</td>
+        </tr>
+        <tr>
+          <th>Average Discount (%)</th>
+          <td id="average-discount">0.00</td>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <td id="total">0.00</td>
+        </tr>
+      </table>
+      <a id="proceed-to-checkout" >Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <!-- <script src="assets/js/cart.js"></script> -->
+  <script>
+    function redirectToThankYou() {
+      var cartBody = document.getElementById('cart-body').innerHTML.trim();
+      
+      if (cartBody !== "") {
+        window.location.href = "thankyou.html";
+      } else {
+        alert("Your cart is empty.");
+      }
+    }
+
+    function removeRow(button) {
+      var row = button.parentElement.parentElement;
+      row.parentElement.removeChild(row);
+      updateTotals();
+    }
+
+    function updateTotals() {
+      var rows = document.querySelectorAll('#cart-body tr');
+      var totalPrice = 0;
+      var subtotal = 0;
+      var totalDiscount = 0;
+      var count = 0;
+
+      rows.forEach(function(row) {
+        var price = parseFloat(row.querySelector('.price').textContent);
+        var subtotalValue = parseFloat(row.querySelector('.subtotal').textContent);
+        var discountPercentage = ((price - subtotalValue) / price) * 100;
+
+        row.querySelector('.discount').textContent = discountPercentage.toFixed(2); // Update discount percentage
+
+        totalPrice += price;
+        subtotal += subtotalValue;
+        totalDiscount += discountPercentage;
+        count++;
+      });
+
+      var averageDiscount = count > 0 ? totalDiscount / count : 0;
+      var totalAfterDiscount = subtotal;
+
+      document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+      document.getElementById('subtotal').textContent = subtotal.toFixed(2);
+      document.getElementById('average-discount').textContent = averageDiscount.toFixed(2);
+      document.getElementById('total').textContent = totalAfterDiscount.toFixed(2); // Total after discount
+    }
+
+    // Initial update on page load
+    document.addEventListener('DOMContentLoaded', updateTotals);
+  </script>
+  <script>
+    document.getElementById('proceed-to-checkout').addEventListener('click', async () => {
+  const cartItems = JSON.parse(localStorage.getItem('cartItems'));
+  const cartTotal = localStorage.getItem('cartTotal');
+
+  try {
+    const response = await fetch('http://localhost:3000/api/orders', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ cartItems, cartTotal })
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert(result.message);
+      // Optionally, clear the cart after successful checkout
+      localStorage.removeItem('cartItems');
+      localStorage.removeItem('cartTotal');
+      window.location.href = 'thankyou.html';
+    } else {
+      alert(`Failed to place order: ${result.error}`);
+    }
+  } catch (error) {
+    console.log(error);
+    alert(`An error occurred: ${error.message}`);
+  }
+});
+
+  </script>
+  <script src="./Cart.js"></script>
+</body>
+</html>

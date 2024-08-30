@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 80%;
+    font-size: 50px;
+    color: #9a77cf; /* Primary color */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  
+  .cart-table {
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid #9a77cf; /* Primary color */
+    border-radius: 3px;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #9a77cf; /* Primary color */
+    padding: 10px;
+    text-align: center;
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .cart-totals {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #9a77cf; /* Primary color */
+    background-color: #fff; /* White background */
+    border-radius: 3px;
+  }
+  
+  .cart-totals h2 {
+    font-size: 20px;
+    color: #9a77cf; /* Primary color */
+  }
+  
+  .cart-totals table {
+    width: 100%; 
+    border-collapse: collapse;
+  }
+  
+  .cart-totals table th,
+  .cart-totals table td {
+    border: none;
+    padding: 10px;
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  #proceed-to-checkout {
+    display: block;
+    background-color: #9a77cf; /* Primary color */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; 
+    border: none;
+    border-radius: 3px;
+  }
+  
+  #proceed-to-checkout:hover {
+    background-color: #7a5fa1; /* Slightly darker shade for hover effect */
+  }
+  
+  /* Remove button styles */
+  .cart-table button {
+    background-color: #e74c3c; /* Red color for remove button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .cart-table button:hover {
+    background-color: #c0392b; /* Darker red for hover effect */
+  }
+  

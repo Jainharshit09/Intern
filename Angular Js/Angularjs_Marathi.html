@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Angular.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>EduCampus</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">EduCampus</a>
+        <form class="d-flex ms-lg-5 ps-lg-5 page2" role="search">
+            <input class="form-control me-2" type="search" placeholder="शोधा" aria-label="Search">
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        भाषा
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="languagesDropdown">
+                        <li><a class="dropdown-item" href="#">मल्याळम</a></li>
+                        <li><a class="dropdown-item" href="#">बंगाली</a></li>
+                        <li><a class="dropdown-item" href="Angularjs.html">अंग्रेजी</a></li>
+                        <li><a class="dropdown-item" href="#">पंजाबी</a></li>
+                        <li><a class="dropdown-item" href="#">कन्नड</a></li>
+                        <li><a class="dropdown-item" href="#">उर्दू</a></li>
+                        <li><a class="dropdown-item" href="#">मराठी</a></li>
+                        <li><a class="dropdown-item" href="#">हिंदी</a></li>
+                        <li><a class="dropdown-item" href="#">तमिळ</a></li>
+                        <li><a class="dropdown-item" href="#">तेलुगू</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      सर्व कोर्सेस
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item" href="#">C</a></li>
+                        <li><a class="dropdown-item" href="/Java/java.html">जावा</a></li>
+                        <li><a class="dropdown-item" href="#">.NET</a></li>
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                        <li><a class="dropdown-item" href="/C++/c++.html">C++</a></li>
+                        <li><a class="dropdown-item" href="#">पायथन</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">जावास्क्रिप्ट</a></li>
+                        <li><a class="dropdown-item" href="#">रिएक्ट JS</a></li>
+                        <li><a class="dropdown-item" href="#">बूटस्ट्रॅप</a></li>
+                        <li><a class="dropdown-item" href="Angularjs.html">अंगुलर JS</a></li>
+                        <li><a class="dropdown-item" href="/Course page with using bootstrap AI\Course page with using bootstrap\coursedatascience.html">AI</a></li>
+                        <li><a class="dropdown-item" href="#">आर्टिफिशियल इंटेलिजन्स</a></li>
+                        <li><a class="dropdown-item" href="/Course page with using bootstrap ML\Course page with using bootstrap\coursedatascience.html">मशीन लर्निंग</a></li>
+                        <li><a class="dropdown-item" href="#">PHP</a></li>
+                        <li><a class="dropdown-item" href="#">SQL</a></li>
+                        <li><a class="dropdown-item" href="#">MySQL</a></li>
+                        <li><a class="dropdown-item" href="#">MsSQL</a></li>
+                        <li><a class="dropdown-item" href="#">पॉवर BI</a></li>
+                        <li><a class="dropdown-item" href="#">Django</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">आमच्याबद्दल</a>
+                </li>
+            </ul>
+            <div class="d-flex-icons">
+                <a href="/Cart\cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                    <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="card bg-dark text-white">
+    <img src="imagesc/bpbg.jpeg" class="card-img" alt="...">
+    <img src="imagesc/angularbg.jpg" class="overlay-image" alt="...">
+    <div class="card-img-overlay overlay-left">
+        <h5 class="card-title" style="font-size: 30px;"><strong>अंगुलर JS मूलतत्त्व</strong></h5>
+        <p class="card-text" style="font-size: 15px;">अंगुलरJS या शक्तिशाली जावास्क्रिप्ट फ्रेमवर्कच्या मूलतत्त्वांची समज मिळवा, ज्यामुळे डायनॅमिक वेबसाईट्स तयार करता येतात. या कोर्समध्ये प्रारंभिक डेटा बाइंडिंग, डायरेक्टिव्हस, आणि सर्व्हिसेस या मूलभूत संकल्पना समाविष्ट आहेत.</p>
+        <div class="d-flex justify-content-between">
+            <div>
+                <button class="btn"><span class="page6">&#8377;800 <span class="page7"> &#8377;1680</span></button>
+                <a href="#" class="btn btn-primarys" id="cart">कार्टमध्ये जोडा</a>
+                <a href="#" class="btn btn-primarys">आता नोंदणी करा</a>
+
+                <div class="page8">
+                    <h5>कोर्समध्ये समाविष्ट</h5>
+                    <div class="course-meta">
+                        <span class="meta-item"><i class="icon-level"></i> Intermediate</span>
+                        <span class="meta-item"><i class="icon-duration"></i> 26 तास</span>
+                        <span class="meta-item"><i class="icon-projects"></i> वास्तविक प्रकल्प</span>
+                        <span class="meta-item"><i class="icon-certificate"></i>कोर्स पूर्णता प्रमाणपत्र</span>
+                        <span class="meta-item"><i class="icon-updated"></i> शेवटचे अपडेट: 30 जून, 2024</span>
+                    </div>
+                </div>
+                <!-- Move instructor and language information here -->
+                <div class="language-dropdown">
+                    <i class="fas fa-language language-icon" id="languagei-icon"></i>
+                    <span id="language-text">अंग्रेजी, हिंदी, उर्दू <a href="#" id="more-languages">+10 अधिक</a></span>
+                    <div id="all-languages" style="display: none;">
+                        <a href="#">अंग्रेजी</a>
+                        <a href="#">हिंदी</a>
+                        <a href="#">उर्दू</a>
+                        <a href="#">कन्नड</a>
+                        <a href="#">तेलुगू</a>
+                        <a href="#">तमिळ</a>
+                        <a href="#">पंजाबी</a>
+                        <a href="#">बंगाली</a>
+                        <a href="#">मराठी</a>
+                        <a href="#">मल्याळम</a>
+                        <!-- Add more languages here -->
+                    </div>
+                </div>
+                <div class="instructor">
+                    <a href="#" class="btn btn-link">अध्यापक: <strong>लिली जो</strong></a>
+                </div>
+            </div>
+            <div>
+                <span class="rating">
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                    <i class="fas fa-star" style="color: #ffd700;"></i>
+                </span>
+                <span class="review-count">5 रिव्ह्यूज</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card h-100" style="min-height: 450px;"> 
+                <div class="card-body">
+                    <div class="icon mb-3">
+                        <img src="imagesc/learning.png" alt="Technology" class="icon-img" >
+                    </div>
+                    <h5 class="card-title">तुम्ही काय शिकाल!</h5>
+                    <ul class="card-text" style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> Angular JS च्या मूलभूत गोष्टी, जे एक लोकप्रिय जावास्क्रिप्ट फ्रेमवर्क आहे डायनॅमिक वेब अ‍ॅप्लिकेशन्स तयार करण्यासाठी.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> कसे पुनरुपयोगी UI घटक तयार करायचे, UI घटकांना डेटा बांधायचा, आणि वापरकर्ता इनपुट हाताळायचे ते समजून घ्या.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> Angular च्या अंतर्निहित सेवा, जसे की $http आणि $timeout, बाह्य डेटा स्रोतांशी संवाद साधण्यासाठी आणि अ‍ॅप्लिकेशन स्टेट व्यवस्थापित करण्यासाठी.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> तुमच्या Angular अ‍ॅप्लिकेशनमध्ये राऊटिंग आणि नेव्हिगेशन कसे लागू करायचे ते शोधा.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> Angular च्या शक्तिशाली टेम्पलेट भाषा वापरून UI घटकांची स्पष्टपणे रेंडर कशी करायची ते शिका.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> Angular अ‍ॅप्लिकेशन डिबग आणि टेस्ट कसे करायचे ते समजून घ्या, अंतर्निहित साधने आणि सर्वोत्तम पद्धती वापरून.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100" style="min-height: 450px;"> 
+                <div class="card-body">
+                    <div class="icon mb-3">
+                        <img src="imagesc/inventory.png" alt="Technology" class="icon-img">
+                    </div>
+                    <h5 class="card-title">पूर्वअट</h5>
+                    <ul class="card-text" style="list-style: none; padding: 0;">
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> HTML, CSS, आणि जावास्क्रिप्टची मूलभूत समज.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> चल, डेटा प्रकार, आणि नियंत्रण संरचनांसारख्या मूलभूत प्रोग्रामिंग संकल्पनांची परिचितता.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> HTTP विनंत्या आणि प्रतिसादांसारख्या वेब विकास संकल्पनांची मूलभूत समज.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> Visual Studio Code किंवा Sublime Text सारख्या तुमच्या संगणकावर कोड संपादक किंवा IDE स्थापित केलेले असावे.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> कमांड लाइन किंवा टर्मिनल वापरण्याची मूलभूत समज.</li>
+                        <li><i class="fas fa-check-circle" style="color: #34C759;"></i> शिकण्याची इच्छा आणि डायनॅमिक वेब अ‍ॅप्लिकेशन्स तयार करण्याचा उत्साह असावा.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="description-box border rounded p-3 shadow-sm">
+        <div class="description-content" id="description" style="max-height: 200px; overflow: hidden;">
+            <p style="font-weight: bold; font-size: 1.2em;">वर्णन</p>
+            <p><strong><span style="color: #6c757d;">Angular JS मूलभूत - लिली जोई द्वारा</span></strong></p>
+            <p>Angular JS मूलभूतांची सुरवात करण्यासाठी ऑनलाइन कोर्स आहे जो विद्यार्थ्यांना Angular JS चे मूलभूत समजून घेण्यास डिझाइन केलेले आहे, जे डायनॅमिक वेब अ‍ॅप्लिकेशन्स तयार करण्यासाठी एक लोकप्रिय जावास्क्रिप्ट फ्रेमवर्क आहे. हा कोर्स पूर्णपणे प्रारंभिकांसाठी आहे ज्यांना Angular JS शिकायचे आहे आणि फ्रेमवर्कमध्ये एक मजबूत पाया तयार करायचा आहे.</p>
+            
+            <p style="font-weight: bold; font-size: 1.2em;">कोर्स पुनरावलोकन</p>
+            <p>या व्यापक कोर्ससह AngularJS च्या आवश्यक गोष्टींमध्ये दडपून जा. तुम्हाला AngularJS फ्रेमवर्कचे सखोल ज्ञान प्राप्त होईल आणि डायनॅमिक वेब अ‍ॅप्लिकेशन्स तयार करायला शिकाल. येथे काय समाविष्ट आहे:</p>
+            <ul>
+                <li>AngularJS चे परिचय आणि त्याच्या मुख्य संकल्पना, फ्रेमवर्कच्या आर्किटेक्चरचे समजून घेण्यासाठी.</li>
+                <li>संगठित कोडसाठी मॉड्यूल, कंट्रोलर, आणि सेवा वापरून अनुप्रयोग तयार करणे आणि संरचित करणे.</li>
+                <li>अ‍ॅप्लिकेशन कार्यक्षमता आणि कार्यक्षमता वाढवण्यासाठी द्वि-मार्ग डेटा बाइंडिंग आणि अवलंबन इंजेक्शन.</li>
+                <li>HTML क्षमतांचा विस्तार आणि घटकांचा पुनरुपयोग करण्यासाठी निर्देश तयार करणे आणि व्यवस्थापित करणे.</li>
+                <li>सिंगल-पेज अ‍ॅप्लिकेशन्स तयार करण्यासाठी राऊटिंग आणि नेव्हिगेशन लागू करणे.</li>            
+            </ul>
+            
+            <p style="font-weight: bold; font-size: 1.2em;">कोर्स का निवडावे?</p>
+            <p>या कोर्समध्ये सामील होण्यासाठी काही प्रेरणादायक कारणे:</p>
+            <ul>
+                <li>AngularJS मूलभूत गोष्टींचे व्यापक कव्हरेज, मजबूत पाया सुनिश्चित करणारे.</li>
+                <li>शिक्षण आणि व्यावहारिक अनुप्रयोग सक्षम करणारे हाताळण्याचे व्यायाम आणि प्रकल्प.</li>
+                <li>नेटवर्किंग आणि समर्थनासाठी शिकणाऱ्यांची आणि व्यावसायिकांची सहकारी समुदायात प्रवेश.</li>
+                <li>विस्तृत उद्योग ज्ञान असलेल्या अनुभवी प्रशिक्षकाचे मार्गदर्शन.</li>
+                <li>तुमच्या वेळापत्रकानुसार आणि वचनबद्धतेनुसार लवचीक शिकण्याचा वेग.</li>
+            </ul>
+            
+            <p style="font-weight: bold; font-size: 1.2em;">कोर्स आवश्यकता</p>
+            <p>AngularJS च्या पूर्वानुभवाची आवश्यकता नाही. तथापि, HTML, CSS, आणि जावास्क्रिप्टचे मूलभूत ज्ञान लाभदायक ठरेल. शिकण्याची इच्छा आणि नवीन कल्पनांचा शोध घेणे या कोर्समध्ये यशस्वी होण्यासाठी आवश्यक आहे.</p>
+
+            <p style="font-weight: bold; font-size: 1.2em;">तयार अभ्यासक्रम</p>
+            <p>कोर्समध्ये खालील मॉड्यूल्स समाविष्ट आहेत:</p>
+            <ul class="module-list">
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 1: AngularJS परिचय</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>AngularJS काय आहे?</li>
+                            <li>AngularJS वापरण्याचे फायदे</li>
+                            <li>AngularJS vs. अन्य फ्रेमवर्क्स</li>
+                            <li>विकसनाचे वातावरण सेट करणे
+                                <ul>
+                                    <li>Node.js आणि npm स्थापित करणे</li>
+                                    <li>AngularJS स्थापित करणे</li>
+                                    <li>साधारण प्रकल्प सेट करणे</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 2: HTML, CSS, आणि JavaScript चे मूलभूत</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>HTML संरचनेचा आढावा</li>
+                            <li>मूलभूत CSS स्टायलिंग</li>
+                            <li>JavaScript मूलभूत गोष्टी
+                                <ul>
+                                    <li>चल आणि डेटा प्रकार</li>
+                                    <li>फंक्शन्स आणि नियंत्रण संरचना</li>
+                                    <li>DOM हाताळणी</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 3: AngularJS सह सुरुवात</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>AngularJS आर्किटेक्चर समजून घेणे</li>
+                            <li>मूलभूत AngularJS अ‍ॅप्लिकेशन तयार करणे
+                                <ul>
+                                    <li>ng-app निर्देश</li>
+                                    <li>ng-model निर्देश</li>
+                                    <li>ng-bind निर्देश</li>
+                                </ul>
+                            </li>
+                            <li>AngularJS अभिव्यक्ती समजून घेणे</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 4: कंट्रोलर्स आणि स्कोप</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>कंट्रोलर्स काय आहेत?</li>
+                            <li>कंट्रोलर्स तयार करणे आणि वापरणे</li>
+                            <li>$scope समजून घेणे</li>
+                            <li>$scope सह डेटा बाइंडिंग</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 5: AngularJS मॉड्यूल्स सह काम करणे</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>AngularJS मॉड्यूल्स तयार करणे आणि वापरणे</li>
+                            <li>AngularJS मध्ये मॉड्यूलर आर्किटेक्चर</li>
+                            <li>अवलंबन इंजेक्शन मूलभूत</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 6: निर्देश आणि अभिव्यक्ती</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>अंतर्निहित निर्देश
+                                <ul>
+                                    <li>ng-repeat</li>
+                                    <li>ng-if</li>
+                                    <li>ng-show/ng-hide</li>
+                                </ul>
+                            </li>
+                            <li>AngularJS अभिव्यक्ती वापरणे</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 7: फॉर्म्स आणि वापरकर्ता इनपुट</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>फॉर्म्ससाठी डेटा बांधणे</li>
+                            <li>फॉर्म इनपुट कंट्रोल्स
+                                <ul>
+                                    <li>टेक्स्ट इनपुट</li>
+                                    <li>चेकबॉक्सेस</li>
+                                    <li>रेडिओ बटण</li>
+                                    <li>सिलेक्ट बॉक्सेस</li>
+                                </ul>
+                            </li>
+                            <li>फॉर्म वैधता आणि त्रुटी हाताळणी
+                                <ul>
+                                    <li>अंतर्निहित फॉर्म वैधता</li>
+                                    <li>कस्टम फॉर्म वैधता</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 8: फिल्टर्स</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>फिल्टर्सचा परिचय</li>
+                            <li>अंतर्निहित फिल्टर्स वापरणे
+                                <ul>
+                                    <li>currency</li>
+                                    <li>date</li>
+                                    <li>filter</li>
+                                </ul>
+                            </li>
+                            <li>कस्टम फिल्टर्स तयार करणे</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 9: सेव्हा आणि फॅक्टरीज</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>AngularJS सेव्हांचे परिचय</li>
+                            <li>सेव्हा तयार करणे आणि वापरणे</li>
+                            <li>$http वापरून AJAX विनंत्या</li>
+                            <li>फॅक्टरीज तयार करणे आणि वापरणे</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="module-title"><span><strong>मॉड्यूल 10: राऊटिंग आणि नेव्हिगेशन</strong></span></div>
+                    <div class="module-content">
+                        <ul>
+                            <li>ngRoute चा परिचय</li>
+                            <li>रूट कॉन्फिगर करणे</li>
+                            <li>सिंगल पेज अ‍ॅप्लिकेशन्स (SPA) तयार करणे</li>
+                            <li>रूट पॅरामीटर्स वापरणे</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <p style="font-weight: bold; font-size: 1.2em;">कोर्स फायदे</p>
+            <p>हा कोर्स पूर्ण केल्यानंतर, तुम्ही:</p>
+            <ul>
+                <li>AngularJS चा ठोस समज विकसित कराल, ज्यामुळे तुम्हाला डायनॅमिक वेब अ‍ॅप्लिकेशन्स तयार करता येतील.</li>
+                <li>हाताळणीच्या प्रकल्पांद्वारे व्यावहारिक अनुभव प्राप्त कराल, ज्यामुळे तुमच्या पोर्टफोलिओला बळकटी मिळेल.</li>
+                <li>तुमच्या शिक्षण आणि सुधारण्यासाठी प्रशिक्षकाकडून मूल्यवान फीडबॅक मिळवाल.</li>
+                <li>प्रेरित शिकणाऱ्यांच्या आणि व्यावसायिकांच्या समुदायात सामील होऊन तुमचे नेटवर्क आणि संधी वाढवाल.</li>
+                <li>AngularJS वापरून वास्तविक जगातील वेब विकासाचे आव्हान आत्मविश्वासाने हाताळण्याचे कौशल्य आणि ज्ञान मिळवाल.</li>            
+            </ul>
+        </div>
+        <button id="toggleButton" class="btn btn-primary mt-3">अधिक दर्शवा</button>
+    </div>
+</div>
+<div class="container mt-5">
+    <h2 class="testimonial-heading text-center mb-4">आमच्या विद्यार्थ्यांचे मत</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 bg-white p-3 shadow-sm" style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="imagesc/avatar.png" alt="avatar" class="avatar" style="width: 40px; height: 40px;" >
+                <div class="name">झोया</div>
+                <div class="time">३ दिवसांपूर्वी</div>
+              </div>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="feedback mt-2">
+                शिक्षकाने जटिल संकल्पनांना सोप्या, समजण्यास सोप्या भाषेत विभाजित करण्याचे उत्कृष्ट काम केले.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2" style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down" style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 bg-white p-3 shadow-sm" style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="imagesc/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">जॉन</div>
+                <div class="time">१ आठवडा पूर्वी</div>
+              </div>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="feedback mt-2">
+                शिक्षकाची उत्साहवर्धनता प्रेरणादायी होती आणि गती योग्य होती. अत्यंत शिफारस!
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2"style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down"style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 bg-white p-3 shadow-sm" style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="imagesc/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">मारिया</div>
+                <div class="time">२ आठवडे पूर्वी</div>
+              </div>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="feedback mt-2">
+                मला हाताने काम करण्याच्या व्यायामांनाही आणि कोर्सच्या आधीच्या धडयावर आधारित असलेल्या पद्धतीला आवडले. आता मला Angular JS मध्ये एक ठोस आधार आहे असे वाटते.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2"style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down"style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 bg-white p-3 shadow-sm" style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="imagesc/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">अलेक्स</div>
+                <div class="time">१ महिना पूर्वी</div>
+              </div>
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="feedback mt-2">
+                मी आधी स्वतः Angular JS शिकण्याचा प्रयत्न केला होता, परंतु हा कोर्स पहिला होता जो मला खरोखर समजला.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2"style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down"style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partners-section">
+    <p class="partners-title">या कोर्सची भारतातील प्रमुख तंत्रज्ञान कंपन्यांनी त्यांच्या कर्मचार्यांसाठी ऑफर केली आहे</p>
+    <div class="partners-logos">
+      <img src="imagesc/infosys.png" alt="Infosys">
+      <img src="imagesc/Cognizant New 2022.png" alt="Cognizant">
+      <img src="imagesc/capge.png" alt="Capgemini">
+      <img src="imagesc/TCS.NS_BIG.png" alt="TCS">
+      <img src="imagesc/accenture.png" alt="Accenture">
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="container-fluid">
+      <h2 class="section-heading">आपल्यासाठी शिफारसी</h2>
+      <div id="imageCardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/basicang.jpg" class="card-img-top" alt="Angular JS Basics">
+                  <div class="card-body">
+                    <h5 class="card-title">Angular JS Basics</h5>
+                    <p class="card-text">AngularJS चे मूलभूत ज्ञान, निर्देशांक, मॉड्यूल आणि कंट्रोलर्स समाविष्ट</p>
+                    <p class="card-teacher">प्रशिक्षक: लिली जो</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $199</p>
+                    <a href="courseangularjs.html" class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/componentang.webp" class="card-img-top" alt="Mastering AngularJS Components">
+                  <div class="card-body">
+                    <h5 class="card-title">Mastering AngularJS Components</h5>
+                    <p class="card-text">AngularJS मध्ये पुनरुपयोग आणि स्केलेबल घटक तयार करा</p>
+                    <p class="card-teacher">प्रशिक्षक: जेन स्मिथ</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $249</p>
+                    <a href="#" class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/singleang.jpg" class="card-img-top" alt="Building Single Page Applications with AngularJS">
+                  <div class="card-body">
+                    <h5 class="card-title">Building Single Page Applications with AngularJS</h5>
+                    <p class="card-text">AngularJS वापरून डायनॅमिक सिंगल-पेज अॅप्लिकेशन्स तयार करा</p>
+                    <p class="card-teacher">प्रशिक्षक: माइक जॉन्सन</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $179</p>
+                    <a href="#" class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/advanceang.jpeg" class="card-img-top" alt="Advanced AngularJS Techniques">
+                  <div class="card-body">
+                    <h5 class="card-title">Advanced AngularJS Techniques</h5>
+                    <p class="card-text">प्रदर्शन ऑप्टिमायझेशन, कस्टम निर्देशांक, आणि चाचणीचा अभ्यास</p>
+                    <p class="card-teacher">प्रशिक्षक: एमिली डेव्हिस</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $299</p>
+                    <a href=" " class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/fulls.webp" class="card-img-top" alt="Full-Stack Development with AngularJS">
+                  <div class="card-body">
+                    <h5 class="card-title">Full-Stack Development with AngularJS</h5>
+                    <p class="card-text">AngularJS साठी बॅक-एंड तंत्रज्ञानांसह पूर्ण-स्टॅक अॅप्लिकेशन्स तयार करा</p>
+                    <p class="card-teacher">प्रशिक्षक: सारा विलियम्स</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $149</p>
+                    <a href="#" class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="cardc">
+                  <img src="imagesc/realtimeangularjs.png" class="card-img-top" alt="Real-Time Applications with AngularJS">
+                  <div class="card-body">
+                    <h5 class="card-title">Real-Time Applications with AngularJS</h5>
+                    <p class="card-text">AngularJS आणि WebSocket तंत्रज्ञान वापरून रिअल-टाइम अॅप्लिकेशन्स तयार करा</p>
+                    <p class="card-teacher">प्रशिक्षक: क्रिस मार्टिन</p>
+                    <p class="card-rating">रेटिंग: 
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                    <p class="card-price">किंमत: $199</p>
+                    <a href="#" class="btn btn-primary">सुरू करा</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">मागे</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">पुढे</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="FAQ">
+    <h3>अधिक विचारलेले प्रश्न</h3>
+
+    <details class="faq-item">
+        <summary>  कोर्सची कालावधी किती आहे?</summary>
+        <p>कोर्सची कालावधी बदलू शकते, पण सामान्यतः 4 ते 6 आठवडे असते, लवचीक शिकण्याच्या पर्यायांसह.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>या कोर्समध्ये कोणते प्रायोगिक प्रकल्प आहेत का? </summary>
+        <p>होय, या कोर्समध्ये व्यावसायिक प्रायोगिक प्रकल्प आणि वास्तविक जगातील केस स्टडीज समाविष्ट आहेत ज्यामुळे आपले ज्ञान लागू करण्यास मदत होईल.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>या कोर्ससाठी कोणते पूर्व शर्त आहेत?</summary>
+        <p>या AngularJS कोर्ससाठी HTML, CSS आणि JavaScript चे मूलभूत ज्ञान आवश्यक आहे.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>पूर्ण झाल्यावर मला प्रमाणपत्र मिळेल का? </summary>
+        <p>होय, आपण कोर्स पूर्ण केल्यावर आणि प्रकल्प पूर्ण केल्यावर आपल्याला एक प्रमाणपत्र प्राप्त होईल.</p>
+    </details>
+</div>
+
+<div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>आमच्याबद्दल</h6>
+          <p class="text-justify">EduCampus एक शैक्षणिक तंत्रज्ञान मंच आहे जो भारतातील विविध भाषांमध्ये संगणक विज्ञान आणि अभियंत्रण विषयांमध्ये शिक्षण प्रदान करण्यास समर्पित आहे. आमचे मिशन म्हणजे गुणवत्तापूर्ण शिक्षण सर्वांसाठी उपलब्ध करून देणे, तज्ञ मार्गदर्शन, वास्तविक जगातील प्रकल्प आणि आभासी प्रयोगशाळांसारख्या वैशिष्ट्यांसह.</p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>तासिका दुवे</h6>
+          <ul class="footer-links">
+            <li><a href="#">मुख्यपृष्ठ</a></li>
+            <li><a href="#">कोर्स</a></li>
+            <li><a href="#">आमच्याबद्दल</a></li>
+            <li><a href="#">संपर्क</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>आमचा अनुसरण करा</h6>
+          <ul class="social-icons">
+            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">कॉपीराइट &copy; 2024 सर्व हक्क राखीव 
+       <a href="#">EduCampus</a>.
+        </p>
+        </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <script src="Angularjs.js"></script> 
+</body>
+</html>
+    

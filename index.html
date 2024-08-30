@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="Style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+      #loggedInContent, #loggedOutContent {
+          display: none;
+      }
+  </style>
+     <title>EduCampus</title>
+</head>
+<body>
+   
+
+    <div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand page1" href="#">Edu Campus</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                <form class="d-flex ms-lg-5 ps-lg-5 page2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+      
+                <ul class="navbar-nav page3">
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Languages
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="languagesDropdown">
+                      <li><a class="dropdown-item" href="#">Malayalam</a></li>
+                      <li><a class="dropdown-item" href="#">Bengali</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Punjabi</a></li>
+                      <li><a class="dropdown-item" href="#">Kannada</a></li>
+                      <li><a class="dropdown-item" href="#">Urdu</a></li>
+                      <li><a class="dropdown-item" href="#">Marathi</a></li>
+                      <li><a class="dropdown-item" href="#">Hindi</a></li>
+                      <li><a class="dropdown-item" href="#">Tamil</a></li>
+                      <li><a class="dropdown-item" href="#">Telugu</a></li>
+                  </ul>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Courses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-scroll" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item" href="#">C</a></li>
+                        <li><a class="dropdown-item" href="Java/java.html">Java</a></li>
+                        <li><a class="dropdown-item" href="#">.NET</a></li>
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                        <li><a class="dropdown-item" href="/C++/c++.html">C++</a></li>
+                        <li><a class="dropdown-item" href="#">Python</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        <li><a class="dropdown-item" href="#">React JS</a></li>
+                        <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                        <li><a class="dropdown-item" href="Angular Js/Angularjs.html">Angular JS</a></li>
+                        <li><a class="dropdown-item" href="#">Data Science</a></li>
+                        <li><a class="dropdown-item" href="Course page with using bootstrap AI\Course page with using bootstrap\coursedatascience.html">Artificial Intelligence</a></li>
+                        <li><a class="dropdown-item" href="Course page with using bootstrap ML\Course page with using bootstrap\coursedatascience.html">Machine Learning</a></li>
+                        <li><a class="dropdown-item" href="#">PHP</a></li>
+                        <li><a class="dropdown-item" href="#">SQL</a></li>
+                        <li><a class="dropdown-item" href="#">MySQL</a></li>
+                        <li><a class="dropdown-item" href="#">MsSQL</a></li>
+                        <li><a class="dropdown-item" href="#">Power BI</a></li>
+                        <li><a class="dropdown-item" href="#">Django</a></li>
+                    </ul>
+                </li>
+    
+                  <li class="nav-item ms-lg-3">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+    
+                  <li>
+                   <a class="nav-link ms-lg-2 page4" href="Cart/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                  </li>
+                  <li class="loggedOutContent">
+                    <a class="nav-link ms-lg-3 page4 btn page5" id="authLink" href="login.html">Login / Sign Up</a>
+                  </li>                  
+                  <div>
+                  </div>
+
+                  
+
+                </ul>
+    
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+
+    
+
+    
+  <div class="carousel-container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/brainstr.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="caption-container">
+                <h5><strong>Unleash the Power of Brainstorming</strong></h5>
+                <p>Study smarter,not harder: learn brainstorming techniques from the experts</p>
+                <button id="btn-enroll-now" class="btn btn-enroll-now">Enroll Now</button>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/blbg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="caption-container">
+              <h5><strong>From EduCampus to Corporate</strong></h5>
+              <p>Educating and inspiring the next generation of leaders and professionals</p>
+              <button id="btn-enroll-now" class="btn btn-enroll-now">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/webd.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="caption-container">
+                <h5><strong>Empowering Learners</strong></h5>
+                <p>Upgrade your learning, unlock more benefits with EduCampus Plus</p>
+                <button id="btn-enroll-now" class="btn btn-enroll-now">Enroll Now</button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <div class="section">
+      <h2 class="section-heading">Explore Our Top Courses</h2>
+      <div class="container">
+      <div id="imageCardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/AI.jpeg" class="card-img-top" alt="Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Artificial Intelligence</h5>
+                    <p class="card-text">Uncover the Basics of AI</p>
+                    <a href="Course page with using Bootstrap AI\Course page with using bootstrap\coursedatascience.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/java.jpeg" class="card-img-top" alt="Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text">Explore the Versatility of Java</p>
+                    <a href="Java/java.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/C++.jpeg" class="card-img-top" alt="Image 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Basic C++</h5>
+                    <p class="card-text">Explore the Versatility of C++</p>
+                    <a href="C++/c++.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/php.jpeg" class="card-img-top" alt="Image 4">
+                  <div class="card-body">
+                    <h5 class="card-title">PHP</h5>
+                    <p class="card-text">Learn to Build dynamic web applications</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/Python.jpeg" class="card-img-top" alt="Image 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Machine learning</h5>
+                    <p class="card-text">Simplify your coding experience</p>
+                    <a href="Course page with using bootstrap ML/Course page with using bootstrap/coursedatascience.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/javascript.jpeg" class="card-img-top" alt="Image 6">
+                  <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Bring your web pages to life</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/angularjs.jpeg" class="card-img-top" alt="Image 7">
+                  <div class="card-body">
+                    <h5 class="card-title">Angular JS</h5>
+                    <p class="card-text">Explore Angular JS's power and flexibility</p>
+                    <a href="Angular Js/Angularjs.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/Datasc.jpeg" class="card-img-top" alt="Image 8">
+                  <div class="card-body">
+                    <h5 class="card-title">Data Science</h5>
+                    <p class="card-text">Unlock insights and drive business decisions</p>
+                    <a href="coursesdata.html" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card">
+                  <img src="images/powerbi.jpeg" class="card-img-top" alt="Image 9">
+                  <div class="card-body">
+                    <h5 class="card-title">Microsoft Power BI</h5>
+                    <p class="card-text">Master data visualization with Power BI</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCardCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col text-center">
+      <h2 class="section-heading">Unbox Your Potential: Learn More</h2>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card">
+        <a href="#">
+          <img src="images/projectt.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Real World Projects</strong></h5>
+          <p class="card-text">Where Ideas Meet Reality!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <a href="#">
+          <img src="images/virtual.jpg" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Virtual Labs</strong></h5>
+          <p class="card-text">Your Coding Playground</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <a href="#">
+          <img src="images/challen.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Challenges</strong></h5>
+          <p class="card-text">Connect, Share, Grow!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="clients">
+    <h1 class="text-lxl font-bold text-center mb-8">Our Partners</h1>
+    <div class="logo-slider-container">
+        <div class="logo-slider">
+            <div class="logo-slide-track">
+                <div class="logo-slide"><img src="./assets/logos--airbnb-icon.png" alt="Airbnb"></div>
+                <div class="logo-slide"><img src="./assets/logos--airbrake.png" alt="Airbrake"></div>
+                <div class="logo-slide"><img src="./assets/logos--airflow.png" alt="Airflow"></div>
+                <div class="logo-slide"><img src="./assets/logos--airtable.png" alt="Airtable"></div>
+                <div class="logo-slide"><img src="./assets/logos--amex.png" alt="American Express"></div>
+                <div class="logo-slide"><img src="./assets/logos--apple-app-store.png" alt="App Store"></div>
+                <div class="logo-slide"><img src="./assets/logos--aws.png" alt="AWS"></div>
+                <div class="logo-slide"><img src="./assets/logos--chrome.png" alt="Chrome"></div>
+                <div class="logo-slide"><img src="./assets/logos--cakephp-icon.png" alt="CakePHP"></div>
+                
+                <!-- Duplicate slides for seamless loop -->
+                <div class="logo-slide"><img src="./assets/logos--airbnb-icon.png" alt="Airbnb"></div>
+                <div class="logo-slide"><img src="./assets/logos--airbrake.png" alt="Airbrake"></div>
+                <div class="logo-slide"><img src="./assets/logos--airflow.png" alt="Airflow"></div>
+                <div class="logo-slide"><img src="./assets/logos--airtable.png" alt="Airtable"></div>
+                <div class="logo-slide"><img src="./assets/logos--amex.png" alt="American Express"></div>
+                <div class="logo-slide"><img src="./assets/logos--apple-app-store.png" alt="App Store"></div>
+                <div class="logo-slide"><img src="./assets/logos--aws.png" alt="AWS"></div>
+                <div class="logo-slide"><img src="./assets/logos--chrome.png" alt="Chrome"></div>
+                <div class="logo-slide"><img src="./assets/logos--cakephp-icon.png" alt="CakePHP"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h2 class="testimonial-heading text-center mb-4">What Our Students Say</h2>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 p-3 page10" style="height: 200px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="images/avatar.png" alt="avatar" class="avatar" style="width: 40px; height: 40px;" >
+                <div class="name">Zoya</div>
+                <div class="time">3 days ago</div>
+              </div>
+              <div class="rating mt-2">
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+              </div>
+              <div class="feedback mt-2">
+                I had zero experience with data science before taking this course, but the instructors made it so easy to understand! The course was well-structured, and the exercises were fun and challenging. I loved how we got to work with real-world datasets and see the concepts in action. I feel confident now to continue learning and exploring data science on my own.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2" style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down" style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 page10 p-3 " style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="images/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">John</div>
+                <div class="time">1 week ago</div>
+              </div>
+              <div class="rating mt-2">
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+              </div>
+              <div class="feedback mt-2">
+                The course was fantastic! It covered all the basics and some advanced topics. The instructors were knowledgeable and approachable. I particularly enjoyed the hands-on projects, which helped me apply what I learned in a practical setting.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2" style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down" style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 page10 p-3 " style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="images/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">Maria</div>
+                <div class="time">2 weeks ago</div>
+              </div>
+              <div class="rating mt-2">
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star-half-alt" style="color: #ffd700;"></i>
+              </div>
+              <div class="feedback mt-2">
+                A great course for beginners! The pace was just right, and the materials were well-organized. I appreciated the real-world examples and the interactive exercises. It was a great introduction to data science.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2" style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down" style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="testimonial-card h-100 page10 p-3" style="height: 300px;">
+          <div class="card-body">
+            <div class="testimonial">
+              <div class="header">
+                <img src="images/avatar.png" alt="avatar" class="avatar"style="width: 40px; height: 40px;">
+                <div class="name">Alex</div>
+                <div class="time">1 month ago</div>
+              </div>
+              <div class="rating mt-2">
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star" style="color: #ffd700;"></i>
+                <i class="fas fa-star-half-alt" style="color: #ffd700;"></i>
+              </div>
+              <div class="feedback mt-2">
+                I found the course to be extremely helpful. The instructors were clear and concise, and the content was relevant and up-to-date. The projects were challenging but doable, and they really helped me understand the material.
+              </div>
+              <div class="helpful mt-2">
+                <i class="fas fa-thumbs-up me-2" style="color: #ffd700;"></i>
+                <i class="fas fa-thumbs-down" style="color: #ffd700;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">EduCampus is an edutech platform dedicated to providing education in Computer Science and Engineering subjects in multiple Indian languages. Our mission is to make quality education accessible to everyone, with features like expert mentoring, real-world projects, and virtual labs.</p>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Follow Us</h6>
+          <ul class="social-icons">
+            <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by 
+       <a>EduCampus</a>.
+        </p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const authLink = document.getElementById("authLink");
+  
+      const isLoggedIn = localStorage.getItem("isLoggedIn");
+  
+      if (isLoggedIn) {
+        authLink.textContent = "Logout";
+        authLink.href = "index.html";
+      } else {
+        authLink.textContent = "Login / Sign Up";
+        authLink.href = "login.html";
+      }
+  
+      authLink.addEventListener("click", function(event) {
+        if (authLink.textContent === "Logout") {
+          localStorage.removeItem("isLoggedIn");
+          authLink.textContent = "Login / Sign Up";
+          authLink.href = "index.html";
+        } else if (authLink.textContent === "Login / Sign Up") {
+          localStorage.setItem("isLoggedIn", "true");
+          authLink.textContent = "Logout";
+          authLink.href = "login.html";
+        }
+      });
+    });
+  </script>
+  
+  
+  
+</html>
